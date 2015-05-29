@@ -1,0 +1,7 @@
+/* Test to see if adding rows works 
+(in particular with duplicate rows) */
+
+create table foo (one, two);
+insert into foo values 'foo', 'bar';
+insert into foo values 'foo', 'bar';
+print foo;

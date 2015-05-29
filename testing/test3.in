@@ -1,0 +1,11 @@
+/* Test to see if conditions work */
+load students;
+load enrolled;
+
+create table enrolled3 
+as select SID, Lastname, Firstname, CCN, Grade 
+from enrolled, students 
+where SID > '102';
+
+print enrolled3;
+
